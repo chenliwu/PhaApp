@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--对话框输入布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:orientation="vertical"
+			  android:padding="@dimen/layout_15dp"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+	<TextView
+			android:textColor="@color/colorPrimary"
+			android:textSize="@dimen/text_20sp"
+			android:id="@+id/txt_dialog_hint"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	<EditText
+			android:id="@+id/edt_dialog_input"
+			style="@style/common_edittext_style"
+			android:maxLength="20"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			tools:ignore="HardcodedText"/>
+</LinearLayout>

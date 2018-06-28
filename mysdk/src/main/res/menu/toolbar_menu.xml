@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <item
+            android:id="@+id/app_bar_menu"
+            android:icon="@drawable/ic_more_horiz_white_36dp"
+            android:title=""
+            android:orderInCategory="101"
+            app:showAsAction="always"/>
+</menu>

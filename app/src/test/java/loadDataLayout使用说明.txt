@@ -1,0 +1,26 @@
+//设置重新加载操作
+        loadDataLayout.setOnReloadListener(new LoadDataLayout.OnReloadListener() {
+            @Override
+            public void onReload(View v, int status) {
+                loadDataLayout.setStatus(LoadDataLayout.LOADING);//加载中
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        loadData();
+                        //loadDataLayout.setStatus(LoadDataLayout.LOADING); //加载中
+                        //loadDataLayout.setStatus(LoadDataLayout.EMPTY); //无数据
+                        //loadDataLayout.setStatus(LoadDataLayout.ERROR); //出错
+                        //loadDataLayout.setStatus(LoadDataLayout.NO_NETWORK); //无网络
+                        //loadDataLayout.setStatus(LoadDataLayout.SUCCESS); //加载成功
+
+                    }
+                }, 2000);
+            }
+        });
+
+
+//loadDataLayout.setStatus(LoadDataLayout.LOADING); //加载中
+//loadDataLayout.setStatus(LoadDataLayout.EMPTY); //无数据
+//loadDataLayout.setStatus(LoadDataLayout.ERROR); //出错
+//loadDataLayout.setStatus(LoadDataLayout.NO_NETWORK); //无网络
+//loadDataLayout.setStatus(LoadDataLayout.SUCCESS); //加载成功

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--已经通过审核，健康问答管理-->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!--
+        RecyclerView 实现item点击水波纹动画
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+    -->
+
+    <LinearLayout
+            android:id="@+id/ll_item"
+            android:paddingLeft="@dimen/layout_25dp"
+            android:paddingRight="@dimen/layout_25dp"
+            android:orientation="vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="InefficientWeight,RtlHardcoded">
+            <TextView
+                    android:text="标题"
+                    android:layout_weight="2"
+                    android:id="@+id/txt_showAskTitle"
+                    android:textSize="@dimen/text_18sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText,NestedWeights"/>
+            <ImageView
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_help_green_500_36dp"
+                    android:layout_width="@dimen/layout_50dp"
+                    android:layout_height="@dimen/layout_50dp"
+                    tools:ignore="ContentDescription,RtlHardcoded"
+                    android:contentDescription=""/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/txt_showAllAnswerCount"
+                android:text="回答总数："
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:textSize="@dimen/text_16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/txt_showAcceptAnswerCount"
+                    android:text="已采纳回答："
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <TextView
+                    android:id="@+id/txt_showUnAcceptAnswerCount"
+                    android:text="未已采纳回答："
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/text_16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText,RtlHardcoded"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/layout_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/txt_showAskStatus"
+                    android:text="状态"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText"/>
+            <TextView
+                    android:text="时间"
+                    android:layout_weight="2"
+                    android:id="@+id/txt_showAskTime"
+                    android:textSize="@dimen/text_16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:paddingLeft="@dimen/layout_25dp"
+            android:paddingRight="@dimen/layout_25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_5dp">
+        <Button
+                android:id="@+id/btn_deleteAsk"
+                android:text="删除问题"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText"/>
+
+    </LinearLayout>
+
+</LinearLayout >

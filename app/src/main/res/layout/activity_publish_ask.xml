@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/activity_sliding_bg"
+              android:orientation="vertical">
+    <include
+            layout="@layout/common_toolbar"></include>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                style="@style/common_linearlayout_container_style"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="ScrollViewSize,UselessLeaf">
+            <EditText
+                    android:id="@+id/edt_title"
+                    android:hint="标题，50字以内"
+                    android:inputType="text"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" tools:ignore="HardcodedText"/>
+
+            <EditText
+                    android:id="@+id/edt_content"
+                    android:hint="请详细描述您的问题（2000字以内）"
+                    android:inputType="textMultiLine"
+                    android:maxLength="2000"
+                    android:scrollbars="vertical"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:minLines="8"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    tools:ignore="HardcodedText"/>
+
+            <Button
+                    android:id="@+id/btn_publish"
+                    style="@style/common_primary_button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="提交"
+                    tools:ignore="HardcodedText"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

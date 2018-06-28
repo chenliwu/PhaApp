@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--健康问答明细-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:background="@color/activity_sliding_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_alignParentTop="true">
+        <include
+                layout="@layout/common_toolbar"></include>
+
+        <com.ganxin.library.LoadDataLayout
+                android:id="@+id/loadDataLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="ScrollViewSize">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <include
+                        layout="@layout/common_recyclerview">
+                </include>
+            </LinearLayout>
+
+        </com.ganxin.library.LoadDataLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <include
+                layout="@layout/common_cut_line"></include>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout
+                    android:id="@+id/ll_publish_answer"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="我来回答"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/layout_10dp"
+                        android:paddingRight="@dimen/layout_10dp"
+                        android:paddingBottom="@dimen/layout_10dp"
+                        android:paddingLeft="@dimen/layout_10dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" tools:ignore="HardcodedText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_collection_ask"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingTop="@dimen/layout_10dp"
+                    android:paddingRight="@dimen/layout_10dp"
+                    android:paddingBottom="@dimen/layout_10dp"
+                    android:paddingLeft="@dimen/layout_10dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="收藏"
+                        android:textSize="@dimen/text_16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:ignore="HardcodedText" android:id="@+id/textView2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_report_ask"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingTop="@dimen/layout_10dp"
+                    android:paddingRight="@dimen/layout_10dp"
+                    android:paddingBottom="@dimen/layout_10dp"
+                    android:paddingLeft="@dimen/layout_10dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="举报"
+                        android:textSize="@dimen/text_16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

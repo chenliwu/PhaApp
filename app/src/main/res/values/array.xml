@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="spriner_security">
+		<item>请选择密保问题</item>
+		<item>您母亲的生日是？</item>
+		<item>您父亲的生日是？</item>
+		<item>您配偶的生日是？</item>
+		<item>您的学号（或工号）是？</item>
+		<item>对您影响最大的人名字是？</item>
+	</string-array>
+
+</resources>

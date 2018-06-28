@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">掌上健康助手</string>
+
+    <string name="btn_send">发送请求</string>
+    <string name="btn_come_login">登录界面</string>
+
+    <string name="health_information">资讯</string>
+    <string name="health_ask">问答</string>
+    <string name="health_tool">工具</string>
+    <string name="personality">个人中心</string>
+
+    <string name="login">登录</string>
+    <string name="no_account_yet_create_one">没有账号？点击这里</string>
+    <string name="input_username_hint">请输入账号</string>
+    <string name="input_password_hint">请输入密码</string>
+
+
+    <string name="dialog_positive">确定</string>
+    <string name="dialog_negative">取消</string>
+
+
+</resources>

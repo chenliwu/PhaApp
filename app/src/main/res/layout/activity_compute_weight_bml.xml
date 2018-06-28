@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--计算体重BML指数activity-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/activity_sliding_bg"
+              android:orientation="vertical">
+    <include
+            layout="@layout/common_toolbar"></include>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                style="@style/common_linearlayout_container_style"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="ScrollViewSize,UselessLeaf">
+            <EditText
+                    android:id="@+id/edt_height"
+                    android:hint="请输入您的身高，单位CM"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"/>
+            <EditText
+                    android:id="@+id/edt_weight"
+                    android:hint="请输入您的体重，单位KG"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" tools:ignore="HardcodedText"/>
+            <Button
+                    android:id="@+id/btn_compute_weight_bml"
+                    style="@style/common_primary_button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="计算我的体重BML指数"/>
+
+            <!--显示计算结果-->
+            <TextView
+                    android:id="@+id/txt_showWeightBml"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/layout_30dp"
+                    android:textSize="@dimen/text_18sp"
+                    android:text="显示计算结果"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/txt_showWeightBmlHint"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/layout_10dp"
+                    android:textSize="@dimen/text_18sp"
+                    android:text="计算结果提示文本"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

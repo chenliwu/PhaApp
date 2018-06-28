@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:background="@color/activity_sliding_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+            layout="@layout/common_toolbar"></include>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                style="@style/common_linearlayout_container_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <!--选择反馈类型-->
+            <LinearLayout
+                    android:padding="@dimen/layout_5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        style="@style/common_textview_style"
+                        android:text="反馈类型"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:ignore="HardcodedText"/>
+                <TextView
+                        style="@style/common_textview_style"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:ignore="HardcodedText"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/rbtn_bug"
+                        tools:ignore="UselessParent">
+                    <RadioButton
+                            android:id="@+id/rbtn_bug"
+                            android:text="bug问题"
+                            style="@style/common_radiobutton_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText"/>
+                    <RadioButton
+                            android:id="@+id/rbtn_suggestion"
+                            android:text="建议意见"
+                            style="@style/common_radiobutton_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText"/>
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <!--输入联系方式-->
+            <LinearLayout
+                    android:padding="@dimen/layout_5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        style="@style/common_textview_style"
+                        android:text="联系方式"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:ignore="HardcodedText"/>
+                <TextView
+                        style="@style/common_textview_style"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:ignore="HardcodedText"/>
+            </LinearLayout>
+            <EditText
+                    android:id="@+id/edt_contact"
+                    android:hint="手机/QQ/邮箱"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" tools:ignore="HardcodedText"/>
+
+
+            <!--输入反馈内容-->
+            <LinearLayout
+                    android:padding="@dimen/layout_5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        style="@style/common_textview_style"
+                        android:text="反馈内容"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:ignore="HardcodedText"/>
+                <TextView
+                        style="@style/common_textview_style"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:ignore="HardcodedText"/>
+            </LinearLayout>
+            <EditText
+                    android:id="@+id/edt_content"
+                    android:hint="请详细描述您的建议或者意见（1000字以内）"
+                    android:inputType="textMultiLine"
+                    android:maxLength="1000"
+                    android:scrollbars="vertical"
+                    android:gravity="top"
+                    android:maxLines="10"
+                    android:minLines="8"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    tools:ignore="HardcodedText"/>
+            <Button
+                    android:id="@+id/btn_submit"
+                    style="@style/common_primary_button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="提交反馈"
+                    tools:ignore="HardcodedText"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

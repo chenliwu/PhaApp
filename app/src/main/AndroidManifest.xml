@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.clw.phaapp">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+            android:name=".app.PhaApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/app_logo"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/app_logo"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".ui.user.LoginActivity"
+                android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity
+                android:name=".ui.user.RegisterActivity"
+                android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity
+                android:name=".ui.user.FindPwdActivity"
+                android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity
+                android:name=".ui.user.FindPwdActivity1"
+                android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity
+                android:name=".ui.user.FindPwdActivity2"
+                android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity
+                android:name=".ui.user.ShowUserinfoActivity"
+                android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity
+                android:name=".ui.user.RevisePwdActivity"
+                android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity
+                android:name=".ui.user.UserFeedbackActivity"
+                android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity android:name=".ui.user.AboutSoftwareActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity android:name=".ui.user.CollectionListActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity android:name=".ui.user.MessageActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity android:name=".ui.user.HistoryActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+
+        <!--健康问答  start          -->
+        <activity android:name=".ui.healthqa.AskManagementActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity android:name=".ui.healthqa.PublishAskActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity android:name=".ui.healthqa.AskDatailActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity android:name=".ui.healthqa.PublishAskAnswerActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity android:name=".ui.healthqa.AcceptAskAnswerActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity android:name=".ui.healthqa.EditAskActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+
+        <activity android:name=".ui.healthqa.ReportAskActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+
+        <!--健康问答  end          -->
+
+        <!--健康工具  start          -->
+        <activity android:name=".ui.healthtool.SearchIllnessActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <activity android:name=".ui.healthtool.ComputeWeightBmlActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <!--健康工具  end          -->
+
+
+        <!--健康资讯  start          -->
+        <activity android:name=".ui.healthinfo.HealthInfoDetailActivity"
+                  android:theme="@style/AppTheme.Activity.Slide">
+        </activity>
+        <!--健康资讯  end          -->
+
+
+
+        <!--下面会创建一个应用私有的com.clw.phaapp.ui的独立进程-->
+        <service android:name="com.clw.phaapp.ui.MainActivity$MessageService"
+                 android:enabled="true"/>
+
+
+
+    </application>
+
+</manifest>

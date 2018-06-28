@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--
+            colorPrimary 应用的主要色调
+            colorPrimaryDark 应用的主要暗色调
+            colorAccent CheckBox，RadioButton，SwitchCompat等一般控件的选中效果默认采用该颜色
+        -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--默认按钮的背景颜色-->
+        <!--<item name="colorButtonNormal">@color/colorPrimary</item>-->
+
+        <!--将ActionBar隐藏,这里使用ToolBar-->
+        <item name="windowActionBar">false</item>
+        <!--去除标题-->
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--导航栏RelativeLaout布局样式-->
+    <style name="nav_relativelayout_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <!--实现水波纹效果-->
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:padding">@dimen/layout_5dp</item>
+    </style>
+
+    <!-- 导航栏单选按钮样式 start -->
+    <style name="nav_radio_style">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_11sp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textColor">@color/selector_nav_text</item>
+    </style>
+    <!-- 导航栏单选按钮样式 end -->
+
+    <!--导航栏指示器（红色圆点）样式-->
+    <style name="nav_textview_indicator_style">
+        <item name="android:layout_width">@dimen/layout_9dp</item>
+        <item name="android:layout_height">@dimen/layout_9dp</item>
+        <item name="android:background">@drawable/shape_message_indicator</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <!--文本公共样式-->
+    <style name="common_textview_style">
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+
+    <!--主色调按钮公共样式-->
+    <style name="common_primary_button_style">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:layout_marginTop">@dimen/layout_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/layout_10dp</item>
+        <!--<item name="android:layout_marginLeft">@dimen/layout_30dp</item>-->
+        <!--<item name="android:layout_marginRight">@dimen/layout_30dp</item>-->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_primary_button</item>
+    </style>
+    <!--红色调按钮公共样式-->
+    <style name="common_red_button_style">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:layout_marginTop">@dimen/layout_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/layout_10dp</item>
+        <!--<item name="android:layout_marginLeft">@dimen/layout_30dp</item>-->
+        <!--<item name="android:layout_marginRight">@dimen/layout_30dp</item>-->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_red_button</item>
+    </style>
+
+    <!--编辑框公共样式-->
+    <style name="common_edittext_style">
+        <item name="android:layout_marginTop">@dimen/layout_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/layout_10dp</item>
+        <!--<item name="android:layout_marginLeft">@dimen/layout_10dp</item>-->
+        <!--<item name="android:layout_marginRight">@dimen/layout_10dp</item>-->
+        <item name="android:background">@drawable/selector_edittext_bg</item>
+        <item name="android:padding">@dimen/layout_10dp</item>
+    </style>
+
+    <!--公共单选按钮样式-->
+    <style name="common_radiobutton_style">
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+
+    <!--LinearLayout公共容器央视-->
+    <style name="common_linearlayout_container_style">
+        <item name="android:layout_marginLeft">@dimen/layout_25dp</item>
+        <item name="android:layout_marginRight">@dimen/layout_25dp</item>
+    </style>
+
+
+    <!--LinearLayout文本公共容器央视-->
+    <style name="common_linearlayout_text_container_style">
+        <item name="android:layout_marginLeft">@dimen/layout_15dp</item>
+        <item name="android:layout_marginRight">@dimen/layout_15dp</item>
+    </style>
+
+
+</resources>

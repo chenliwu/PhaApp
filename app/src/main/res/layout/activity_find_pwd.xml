@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:orientation="vertical"
+			  android:gravity="center_horizontal"
+			  android:background="@color/activity_sliding_bg"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+	<include
+			layout="@layout/common_toolbar"></include>
+
+	<LinearLayout
+			style="@style/common_linearlayout_container_style"
+			android:orientation="vertical"
+			android:gravity="center_horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			tools:ignore="UselessLeaf">
+		<EditText
+				android:id="@+id/edt_usercode"
+				android:hint="请输入找回密码的账号"
+				android:inputType="text"
+				style="@style/common_edittext_style"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:maxLines="1"
+				tools:ignore="HardcodedText"/>
+		<Button
+				android:id="@+id/btn_next"
+				style="@style/common_primary_button_style"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="下一步"
+				tools:ignore="HardcodedText"/>
+
+	</LinearLayout>
+</LinearLayout>

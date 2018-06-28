@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--健康问答采纳回答界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:background="@color/activity_sliding_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include
+            layout="@layout/common_toolbar"></include>
+    <com.ganxin.library.LoadDataLayout
+            android:id="@+id/loadDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <include
+                    layout="@layout/common_recyclerview">
+            </include>
+        </LinearLayout>
+
+    </com.ganxin.library.LoadDataLayout>
+</LinearLayout>

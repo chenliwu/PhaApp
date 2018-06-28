@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:orientation="vertical"
+			  android:gravity="center_horizontal"
+			  android:background="@color/activity_sliding_bg"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+	<include
+			layout="@layout/common_toolbar"></include>
+	<LinearLayout
+			style="@style/common_linearlayout_container_style"
+			android:orientation="vertical"
+			android:gravity="center_horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			tools:ignore="UselessLeaf">
+
+		<TextView
+				android:layout_marginTop="@dimen/layout_10dp"
+				android:layout_marginBottom="@dimen/layout_10dp"
+				android:text="请回答密保问题"
+				style="@style/common_textview_style"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+
+		<EditText
+				android:id="@+id/edt_security"
+				android:hint="密保问题"
+				style="@style/common_edittext_style"
+				android:inputType="text"
+				android:enabled="false"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+
+		<EditText
+				android:id="@+id/edt_answer"
+				android:hint="密保答案"
+				style="@style/common_edittext_style"
+				android:inputType="text"
+				android:maxLength="10"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+
+		<Button
+				android:id="@+id/btn_next"
+				android:text="提交"
+				style="@style/common_primary_button_style"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+	</LinearLayout>
+
+	<include
+			layout="@layout/common_toolbar"></include>
+
+</LinearLayout>

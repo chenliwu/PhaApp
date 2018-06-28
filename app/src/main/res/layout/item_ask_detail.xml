@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--健康问答详情布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+            style="@style/common_linearlayout_container_style"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/txt_showAskTitle"
+                android:textSize="@dimen/text_18sp"
+                android:textColor="@color/black"
+                android:paddingTop="@dimen/layout_5dp"
+                android:text="问答标题"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText"/>
+
+        <TextView
+                android:id="@+id/txt_showAskContent"
+                android:paddingTop="@dimen/layout_5dp"
+                android:paddingBottom="@dimen/layout_5dp"
+                android:textSize="@dimen/text_18sp"
+                android:text="问答详细描述"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/layout_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/txt_showAnswerCount"
+                    android:text="回答数量"
+                    android:layout_marginRight="@dimen/layout_20dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText,RtlHardcoded"/>
+            <TextView
+                    android:id="@+id/txt_showAskTime"
+                    android:text="时间"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/common_cut_line"></include>
+</LinearLayout>

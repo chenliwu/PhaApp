@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!--Fragment容器-->
+    <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/nav_layout"/>
+    <!--分割线-->
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/nav_layout"
+            android:background="@color/line_bg"/>
+    <!--导航栏-->
+    <LinearLayout
+            android:id="@+id/nav_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+        <!--健康资讯-->
+        <RelativeLayout
+                android:id="@+id/rl_health_information"
+                style="@style/nav_relativelayout_style">
+
+            <RadioButton
+                    android:id="@+id/rbtn_health_information"
+                    style="@style/nav_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_health_information"
+                    android:text="@string/health_information"/>
+            <!--指示圆点-->
+            <TextView
+                    android:id="@+id/tv_health_information_indicator"
+                    android:layout_alignRight="@id/rbtn_health_information"
+                    android:layout_marginRight="-10dp"
+                    style="@style/nav_textview_indicator_style"
+                    tools:ignore="RtlHardcoded"/>
+
+            <!--消息通知指示器  显示消息数量-->
+            <!--<TextView-->
+            <!--android:layout_width="17dp"-->
+            <!--android:layout_height="17dp"-->
+            <!--android:text="10"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="8sp"-->
+            <!--android:layout_marginLeft="@dimen/layout_10dp"-->
+            <!--android:id="@+id/tv_health_information_indicator"-->
+            <!--style="@style/nav_textview_indicator_style"-->
+            <!--tools:ignore="HardcodedText,RtlHardcoded,SmallSp"/>-->
+
+        </RelativeLayout>
+        <!--健康问答-->
+        <RelativeLayout
+                android:id="@+id/rl_health_ask"
+                style="@style/nav_relativelayout_style">
+
+            <RadioButton
+                    android:id="@+id/rbtn_health_ask"
+                    style="@style/nav_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/selector_health_ask"
+                    android:text="@string/health_ask"/>
+            <!--指示圆点-->
+            <TextView
+                    android:id="@+id/tv_health_ask_indicator"
+                    android:layout_alignRight="@id/rbtn_health_ask"
+                    android:layout_marginRight="-10dp"
+                    style="@style/nav_textview_indicator_style"
+                    tools:ignore="RtlHardcoded"/>
+
+        </RelativeLayout>
+        <!--健康工具-->
+        <RelativeLayout
+                android:id="@+id/rl_health_tool"
+                style="@style/nav_relativelayout_style">
+
+            <RadioButton
+                    android:id="@+id/rbtn_health_tool"
+                    style="@style/nav_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/selector_health_tool"
+                    android:text="@string/health_tool"/>
+
+            <!--指示圆点-->
+            <TextView
+                    android:id="@+id/tv_health_tool_indicator"
+                    android:layout_alignRight="@id/rbtn_health_tool"
+                    android:layout_marginRight="-10dp"
+                    style="@style/nav_textview_indicator_style"
+                    tools:ignore="RtlHardcoded"/>
+
+        </RelativeLayout>
+        <!--个人中心-->
+        <RelativeLayout
+                android:id="@+id/rl_personality"
+                style="@style/nav_relativelayout_style">
+
+            <RadioButton
+                    android:id="@+id/rbtn_personality"
+                    style="@style/nav_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/selector_personality"
+                    android:text="@string/personality"/>
+
+            <!--指示圆点-->
+            <!--<TextView-->
+            <!--android:id="@+id/tv_personality_indicator"-->
+            <!--android:layout_alignRight="@id/rbtn_personality"-->
+            <!--style="@style/nav_textview_indicator_style"-->
+            <!--tools:ignore="RtlHardcoded"/>-->
+
+            <TextView
+                    android:id="@+id/tv_personality_indicator"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:text="10"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:layout_alignRight="@id/rbtn_personality"
+                    android:layout_marginRight="-10dp"
+                    style="@style/nav_textview_indicator_style"
+                    tools:ignore="HardcodedText,RtlHardcoded,SmallSp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

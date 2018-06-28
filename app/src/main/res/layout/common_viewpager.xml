@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            app:tabIndicatorColor="?attr/colorPrimary"
+            app:tabIndicatorHeight="5dp"
+            app:tabSelectedTextColor="?attr/colorPrimary"/>
+    <include layout="@layout/common_cut_line"></include>
+    <!--
+        app:tabIndicatorColor="@color/colorAccent" 设置指示器滑动条的颜色
+        app:tabIndicatorHeight="5dp" 设置滑动条的高度
+        app:tabSelectedTextColor="#000" 设置当前页卡的标题颜色
+        app:tabTextColor="#fff" 设置页卡标题颜色
+    -->
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

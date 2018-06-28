@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="vertical"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:background="@color/activity_sliding_bg"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	<include layout="@layout/common_toolbar"></include>
+
+	<LinearLayout
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			style="@style/common_linearlayout_container_style"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			tools:ignore="UselessParent">
+
+		<EditText
+				android:id="@+id/edt_usercode"
+				android:hint="账号，6-20位字母数字组合"
+				android:maxLength="20"
+				style="@style/common_edittext_style"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+
+		<EditText
+				android:id="@+id/edt_pwd"
+				android:hint="密码，6-20位，区分大小写"
+				style="@style/common_edittext_style"
+				android:inputType="textPassword"
+				android:maxLength="20"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+
+		<EditText
+				android:id="@+id/edt_conf_pwd"
+				android:hint="再次输入密码"
+				style="@style/common_edittext_style"
+				android:inputType="textPassword"
+				android:maxLength="20"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+		<LinearLayout
+				android:layout_gravity="center"
+				android:layout_marginTop="@dimen/layout_5dp"
+				android:layout_marginBottom="@dimen/layout_5dp"
+				android:layout_marginLeft="@dimen/layout_10dp"
+				android:layout_marginRight="@dimen/layout_10dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+			<TextView
+					style="@style/common_textview_style"
+					android:text="密保问题："
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					tools:ignore="HardcodedText"/>
+			<Spinner
+					android:id="@+id/spriner_security"
+					android:entries="@array/spriner_security"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					tools:ignore="InefficientWeight">
+			</Spinner>
+		</LinearLayout>
+
+		<EditText
+				android:id="@+id/edt_answer"
+				android:hint="密保答案，15字以内"
+				style="@style/common_edittext_style"
+				android:inputType="text"
+				android:maxLength="15"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+
+		<Button
+				android:id="@+id/btn_register"
+				android:text="立即注册"
+				style="@style/common_primary_button_style"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:ignore="HardcodedText"/>
+	</LinearLayout>
+
+</LinearLayout>

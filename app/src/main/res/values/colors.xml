@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#4CAF50</color>
+    <color name="colorAccent">#4CAF50</color>
+
+    <!-- 导航栏文字样式 start -->
+    <color name="nav_text_selected_color">#4CAF50</color>
+    <color name="nav_text_unselected_color">#9E9E9E</color>
+    <!-- 导航栏文字样式 end -->
+
+    <!-- 分割线 -->
+    <color name="line_bg">#eeeeee</color>
+    <!-- ListView分割线 -->
+    <color name="list_line_bg">#ECECEC</color>
+
+    <!--滑动退出Activity背景色 -->
+    <!--<color name="activity_sliding_bg">#EAEAEA</color>-->
+    <color name="activity_sliding_bg">#FFFFFF</color>
+</resources>

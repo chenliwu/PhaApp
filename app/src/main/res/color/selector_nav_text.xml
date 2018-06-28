@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 点击的时候显示不同的字体颜色，选中是蓝色的，未选中是灰色: -->
+    <item android:state_checked="true" android:color="@color/nav_text_selected_color"/>
+    <item android:state_checked="false" android:color="@color/nav_text_unselected_color"/>
+</selector>
